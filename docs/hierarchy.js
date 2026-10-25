@@ -9,6 +9,7 @@ var hierarchy =
     [ "BattleEvent", "struct_battle_event.html", null ],
     [ "Camera", "class_camera.html", null ],
     [ "Renderer::ConstBuffer", "struct_renderer_1_1_const_buffer.html", null ],
+    [ "DamageNumber", "class_damage_number.html", null ],
     [ "DebugUI", "class_debug_u_i.html", null ],
     [ "EffectBase", "class_effect_base.html", null ],
     [ "Game", "class_game.html", null ],
@@ -22,7 +23,10 @@ var hierarchy =
         ] ]
       ] ],
       [ "ObjectBackGround", "class_object_back_ground.html", null ],
-      [ "UIObject", "class_u_i_object.html", null ]
+      [ "TimingIndicator", "class_timing_indicator.html", null ],
+      [ "UIObject", "class_u_i_object.html", [
+        [ "HPBarUI", "class_h_p_bar_u_i.html", null ]
+      ] ]
     ] ],
     [ "Character::Param", "struct_character_1_1_param.html", null ],
     [ "Renderer", "class_renderer.html", null ],

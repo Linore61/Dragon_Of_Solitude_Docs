@@ -8,5 +8,6 @@ var searchData=
   ['renderer_2eh_5',['Renderer.h',['../_renderer_8h.html',1,'']]],
   ['reset_6',['Reset',['../struct_character_1_1_resource.html#a3344ae56da3160142207e06a0d683879',1,'Character::Resource::Reset()'],['../struct_character_1_1_param.html#a4202304faa1a0f57c5da57fa8a3fc132',1,'Character::Param::Reset()']]],
   ['resource_7',['Resource',['../struct_character_1_1_resource.html',1,'Character']]],
-  ['resumeinterruptedanimation_8',['ResumeInterruptedAnimation',['../class_spine_animation.html#a1e39a66e75c7bc6b87036381c03057fc',1,'SpineAnimation']]]
+  ['resumeinterruptedanimation_8',['ResumeInterruptedAnimation',['../class_spine_animation.html#a1e39a66e75c7bc6b87036381c03057fc',1,'SpineAnimation']]],
+  ['right_9',['RIGHT',['../_h_p_bar_u_i_8h.html#a224b9163917ac32fc95a60d8c1eec3aaaec8379af7490bb9eaaf579cf17876f38',1,'HPBarUI.h']]]
 ];

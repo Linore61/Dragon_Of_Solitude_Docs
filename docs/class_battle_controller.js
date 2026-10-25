@@ -1,6 +1,7 @@
 var class_battle_controller =
 [
     [ "BattleController", "class_battle_controller.html#a64424b07201ac76b634f55b9cd802c26", null ],
+    [ "~BattleController", "class_battle_controller.html#afb25e237d7d1f4c7c03d1349a0e3dfe0", null ],
     [ "Draw", "class_battle_controller.html#af815677e253e0f11af1b0a6f5430611a", null ],
     [ "GetBattleState", "class_battle_controller.html#a305fbe2b4b8a7eb117e3f461b485ab90", null ],
     [ "Init", "class_battle_controller.html#a445f7d39020014fc89b12b15df847b64", null ],

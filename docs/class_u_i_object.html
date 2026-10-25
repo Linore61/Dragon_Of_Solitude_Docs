@@ -120,6 +120,7 @@ Inheritance diagram for UIObject:</div>
   <img src="class_u_i_object.png" usemap="#UIObject_map" alt=""/>
   <map id="UIObject_map" name="UIObject_map">
 <area href="class_object.html" alt="Object" shape="rect" coords="0,0,60,24"/>
+<area href="class_h_p_bar_u_i.html" alt="HPBarUI" shape="rect" coords="0,112,60,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -131,8 +132,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b6cc0b61287778b8d21384cd46524ed" id="r_a2b6cc0b61287778b8d21384cd46524ed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b6cc0b61287778b8d21384cd46524ed">Init</a> (const DirectX::XMFLOAT3 &amp;pos, const DirectX::XMFLOAT3 &amp;scale)</td></tr>
 <tr class="memitem:af979ef3f1dbdb7355c01e8328839431e" id="r_af979ef3f1dbdb7355c01e8328839431e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af979ef3f1dbdb7355c01e8328839431e">Update</a> (float tick) override</td></tr>
 <tr class="memitem:aa2f030d95d3d5105b7a5f141ac943fad" id="r_aa2f030d95d3d5105b7a5f141ac943fad"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa2f030d95d3d5105b7a5f141ac943fad">Draw</a> () override</td></tr>
-<tr class="memitem:ade40adf2db9bda3da13ec85ce6e3010f" id="r_ade40adf2db9bda3da13ec85ce6e3010f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ade40adf2db9bda3da13ec85ce6e3010f">PlayAnimation</a> (const char *animationName, bool loop)</td></tr>
+<tr class="memitem:a1c405ac9e3b6e4ca9d27cf266b42f67d" id="r_a1c405ac9e3b6e4ca9d27cf266b42f67d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1c405ac9e3b6e4ca9d27cf266b42f67d">PlayAnimation</a> (const char *animationName, bool loop, bool reverse=false)</td></tr>
+<tr class="memitem:ae1fdd0dcd30d73e7268e802065f2b83a" id="r_ae1fdd0dcd30d73e7268e802065f2b83a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae1fdd0dcd30d73e7268e802065f2b83a">PlayAnimation</a> (const char *firstAnimation, const char *secondAnimation, bool lastLoop)</td></tr>
 <tr class="memitem:a8503b1757ccbc9f306313b3b947fbd40" id="r_a8503b1757ccbc9f306313b3b947fbd40"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8503b1757ccbc9f306313b3b947fbd40">ConsumeAnimationComplete</a> (const char *animationName)</td></tr>
+<tr class="memitem:a4253daebe0b0584658d5b3c0493be673" id="r_a4253daebe0b0584658d5b3c0493be673"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4253daebe0b0584658d5b3c0493be673">SetUVOffset</a> (float u, float v)</td></tr>
+<tr class="memitem:a9476e657afb972b72f072044368ce278" id="r_a9476e657afb972b72f072044368ce278"><td class="memItemLeft">DirectX::XMFLOAT2&#160;</td><td class="memItemRight"><a class="el" href="#a9476e657afb972b72f072044368ce278">GetuvOffset</a> ()</td></tr>
 <tr class="inherit_header pub_methods_class_object"><td colspan="2">Public Member Functions inherited from <a class="el" href="class_object.html">Object</a></td></tr>
 <tr class="memitem:a40860402e64d8008fb42329df7097cdb pub_methods_class_object" id="r_a40860402e64d8008fb42329df7097cdb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object</a> ()</td></tr>
 <tr class="memitem:a6079c1cd4ff52a144264613509f987b7 pub_methods_class_object" id="r_a6079c1cd4ff52a144264613509f987b7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a6079c1cd4ff52a144264613509f987b7">Object</a> (std::string imgname)</td></tr>
@@ -141,19 +145,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9252cc36e32dda1ac9b8927e2e334570 pub_methods_class_object" id="r_a9252cc36e32dda1ac9b8927e2e334570"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a9252cc36e32dda1ac9b8927e2e334570">~Object</a> () noexcept</td></tr>
 <tr class="memitem:ae2984f2a2376cf5cf1a9cfb97111b282 pub_methods_class_object" id="r_ae2984f2a2376cf5cf1a9cfb97111b282"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#ae2984f2a2376cf5cf1a9cfb97111b282">Init</a> ()</td></tr>
 <tr class="memitem:a1b028b224040e3465277000e99b166e8 pub_methods_class_object" id="r_a1b028b224040e3465277000e99b166e8"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a1b028b224040e3465277000e99b166e8">UnInit</a> ()</td></tr>
-<tr class="memitem:a4e7e87a2ef317a4b6310694f7c7b34e5 pub_methods_class_object" id="r_a4e7e87a2ef317a4b6310694f7c7b34e5"><td class="memItemLeft">DirectX::XMFLOAT3&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a4e7e87a2ef317a4b6310694f7c7b34e5">Getpos</a> ()</td></tr>
-<tr class="memitem:adc7cf6eba7ad33efeb63e98859ab1a77 pub_methods_class_object" id="r_adc7cf6eba7ad33efeb63e98859ab1a77"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#adc7cf6eba7ad33efeb63e98859ab1a77">Setpos</a> (DirectX::XMFLOAT3 pos)</td></tr>
-<tr class="memitem:a455d7d85dfc47664ff7868b6a27f7d77 pub_methods_class_object" id="r_a455d7d85dfc47664ff7868b6a27f7d77"><td class="memItemLeft">DirectX::XMFLOAT3&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a455d7d85dfc47664ff7868b6a27f7d77">Getrot</a> ()</td></tr>
-<tr class="memitem:a05612ea6831df729af0d41c0b337c4c5 pub_methods_class_object" id="r_a05612ea6831df729af0d41c0b337c4c5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a05612ea6831df729af0d41c0b337c4c5">Setrot</a> (DirectX::XMFLOAT3 rot)</td></tr>
-<tr class="memitem:aa2fc357f9ec29bde25d4d1d2d57cca1d pub_methods_class_object" id="r_aa2fc357f9ec29bde25d4d1d2d57cca1d"><td class="memItemLeft">DirectX::XMFLOAT3&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#aa2fc357f9ec29bde25d4d1d2d57cca1d">Getscale</a> ()</td></tr>
+<tr class="memitem:a310c84579c6ba0728c1a88f2b327bbef pub_methods_class_object" id="r_a310c84579c6ba0728c1a88f2b327bbef"><td class="memItemLeft">DirectX::XMFLOAT3&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a310c84579c6ba0728c1a88f2b327bbef">GetPos</a> ()</td></tr>
+<tr class="memitem:aa989aaa25721b503c94dbcf963487c95 pub_methods_class_object" id="r_aa989aaa25721b503c94dbcf963487c95"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#aa989aaa25721b503c94dbcf963487c95">SetPos</a> (DirectX::XMFLOAT3 pos)</td></tr>
+<tr class="memitem:a0e50619e62f2377e69a21c8c02cd2fa2 pub_methods_class_object" id="r_a0e50619e62f2377e69a21c8c02cd2fa2"><td class="memItemLeft">DirectX::XMFLOAT3&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a0e50619e62f2377e69a21c8c02cd2fa2">GetRot</a> ()</td></tr>
+<tr class="memitem:a656d077517370f9b595952fba6031a53 pub_methods_class_object" id="r_a656d077517370f9b595952fba6031a53"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a656d077517370f9b595952fba6031a53">SetRot</a> (DirectX::XMFLOAT3 rot)</td></tr>
+<tr class="memitem:a2566aab027a3d0118546132fa295c196 pub_methods_class_object" id="r_a2566aab027a3d0118546132fa295c196"><td class="memItemLeft">DirectX::XMFLOAT3&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a2566aab027a3d0118546132fa295c196">GetScale</a> ()</td></tr>
 <tr class="memitem:a73f67c31487519b324ce669167849977 pub_methods_class_object" id="r_a73f67c31487519b324ce669167849977"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a73f67c31487519b324ce669167849977">SetScale</a> (DirectX::XMFLOAT3 scale)</td></tr>
-<tr class="memitem:a37b3bb3216953ff61a0913590923c796 pub_methods_class_object" id="r_a37b3bb3216953ff61a0913590923c796"><td class="memItemLeft">DirectX::XMFLOAT4&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a37b3bb3216953ff61a0913590923c796">Getcolor</a> ()</td></tr>
+<tr class="memitem:acdc8aa41475f1f64766885e6378f7630 pub_methods_class_object" id="r_acdc8aa41475f1f64766885e6378f7630"><td class="memItemLeft">DirectX::XMFLOAT4&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#acdc8aa41475f1f64766885e6378f7630">GetColor</a> ()</td></tr>
+<tr class="memitem:af5727d9801944ddb587d675d8c65ad5d pub_methods_class_object" id="r_af5727d9801944ddb587d675d8c65ad5d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#af5727d9801944ddb587d675d8c65ad5d">SetColor</a> (DirectX::XMFLOAT4 color)</td></tr>
+<tr class="memitem:aa4a20825db55ea1eabfbcce1c18db047 pub_methods_class_object" id="r_aa4a20825db55ea1eabfbcce1c18db047"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#aa4a20825db55ea1eabfbcce1c18db047">SetUV</a> (float left, float right, float up, float down)</td></tr>
 <tr class="memitem:ac1ca795f8a80f57f6f973874189af506 pub_methods_class_object" id="r_ac1ca795f8a80f57f6f973874189af506"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#ac1ca795f8a80f57f6f973874189af506">SetTexture</a> (const std::string &amp;newtexname)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab02932b8e372b01de80f48d6b905e01b" id="r_ab02932b8e372b01de80f48d6b905e01b"><td class="memItemLeft"><a class="el" href="class_spine_animation.html">SpineAnimation</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab02932b8e372b01de80f48d6b905e01b">m_spineAnimation</a></td></tr>
 <tr class="memitem:a156d26714e69eb0d6097f9edcc48f459" id="r_a156d26714e69eb0d6097f9edcc48f459"><td class="memItemLeft">std::vector&lt; std::unique_ptr&lt; <a class="el" href="class_effect_base.html">EffectBase</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a156d26714e69eb0d6097f9edcc48f459">m_effect</a></td></tr>
+<tr class="memitem:a4031eed90e42b81ac74dc31415d475e9" id="r_a4031eed90e42b81ac74dc31415d475e9"><td class="memItemLeft">DirectX::XMFLOAT2&#160;</td><td class="memItemRight"><a class="el" href="#a4031eed90e42b81ac74dc31415d475e9">m_uvOffset</a> = { 0.0f, 0.0f }</td></tr>
 <tr class="inherit_header pro_attribs_class_object"><td colspan="2">Protected Attributes inherited from <a class="el" href="class_object.html">Object</a></td></tr>
 <tr class="memitem:af8620f1290efcc22ad8c0b20107a9119 pro_attribs_class_object" id="r_af8620f1290efcc22ad8c0b20107a9119"><td class="memItemLeft"><a class="el" href="struct_renderer_1_1_vertex.html">Renderer::Vertex</a>&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#af8620f1290efcc22ad8c0b20107a9119">m_vertexList</a> [4]</td></tr>
 <tr class="memitem:a53d1e6ba75ca1c271f2337382ca58f7c pro_attribs_class_object" id="r_a53d1e6ba75ca1c271f2337382ca58f7c"><td class="memItemLeft">DirectX::XMFLOAT3&#160;</td><td class="memItemRight"><a class="el" href="class_object.html#a53d1e6ba75ca1c271f2337382ca58f7c">m_position</a> = { 0.0f, 0.0f, 0.0f }</td></tr>
@@ -261,6 +268,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9476e657afb972b72f072044368ce278" name="a9476e657afb972b72f072044368ce278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9476e657afb972b72f072044368ce278">&#9670;&#160;</a></span>GetuvOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DirectX::XMFLOAT2 UIObject::GetuvOffset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2b6cc0b61287778b8d21384cd46524ed" name="a2b6cc0b61287778b8d21384cd46524ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b6cc0b61287778b8d21384cd46524ed">&#9670;&#160;</a></span>Init() <span class="overload">[1/2]</span></h2>
 
@@ -318,8 +350,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ade40adf2db9bda3da13ec85ce6e3010f" name="ade40adf2db9bda3da13ec85ce6e3010f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade40adf2db9bda3da13ec85ce6e3010f">&#9670;&#160;</a></span>PlayAnimation()</h2>
+<a id="a1c405ac9e3b6e4ca9d27cf266b42f67d" name="a1c405ac9e3b6e4ca9d27cf266b42f67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c405ac9e3b6e4ca9d27cf266b42f67d">&#9670;&#160;</a></span>PlayAnimation() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,9 +364,77 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>loop</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>loop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>reverse</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1fdd0dcd30d73e7268e802065f2b83a" name="ae1fdd0dcd30d73e7268e802065f2b83a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1fdd0dcd30d73e7268e802065f2b83a">&#9670;&#160;</a></span>PlayAnimation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UIObject::PlayAnimation </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>firstAnimation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>secondAnimation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>lastLoop</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4253daebe0b0584658d5b3c0493be673" name="a4253daebe0b0584658d5b3c0493be673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4253daebe0b0584658d5b3c0493be673">&#9670;&#160;</a></span>SetUVOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UIObject::SetUVOffset </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>u</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -400,6 +500,28 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_spine_animation.html">SpineAnimation</a> UIObject::m_spineAnimation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4031eed90e42b81ac74dc31415d475e9" name="a4031eed90e42b81ac74dc31415d475e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4031eed90e42b81ac74dc31415d475e9">&#9670;&#160;</a></span>m_uvOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DirectX::XMFLOAT2 UIObject::m_uvOffset = { 0.0f, 0.0f }</td>
         </tr>
       </table>
   </td>

@@ -130,9 +130,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2789424425c2f818be3205750ecce05" id="r_ae2789424425c2f818be3205750ecce05"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ae2789424425c2f818be3205750ecce05">EndDraw</a> ()</td></tr>
 <tr class="memitem:a77684b7b91f5276eb743012202621eb5" id="r_a77684b7b91f5276eb743012202621eb5"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a77684b7b91f5276eb743012202621eb5">UnInit</a> ()</td></tr>
 <tr class="memitem:a1624e355845da30415643636eff003aa" id="r_a1624e355845da30415643636eff003aa"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a1624e355845da30415643636eff003aa">DrawSprite</a> (const DirectX::XMFLOAT3 &amp;pos, const DirectX::XMFLOAT3 &amp;scale, const DirectX::XMFLOAT3 &amp;angle, const DirectX::XMFLOAT4 &amp;color, ID3D11Buffer *VertexBuffer, ID3D11ShaderResourceView *TextureView, bool useCamera=true)</td></tr>
+<tr class="memitem:ac9f2cfcb5e01e68f9df6bd11d48b2950" id="r_ac9f2cfcb5e01e68f9df6bd11d48b2950"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ac9f2cfcb5e01e68f9df6bd11d48b2950">DrawSprite</a> (const DirectX::XMFLOAT3 &amp;pos, const DirectX::XMFLOAT3 &amp;scale, const DirectX::XMFLOAT3 &amp;angle, const DirectX::XMFLOAT4 &amp;color, ID3D11Buffer *VertexBuffer, ID3D11ShaderResourceView *TextureView, const DirectX::XMFLOAT2 &amp;uvOffset={ 0.0f, 0.0f }, bool useCamera=true)</td></tr>
 <tr class="memitem:a0a103dd6d1be1c8ac04c9eda69ab3d29" id="r_a0a103dd6d1be1c8ac04c9eda69ab3d29"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0a103dd6d1be1c8ac04c9eda69ab3d29">DrawSpine</a> (spine::Skeleton &amp;skeleton, bool useCamera=true)</td></tr>
 <tr class="memitem:ae84e7b7351408a0e02ee35defc8ced23" id="r_ae84e7b7351408a0e02ee35defc8ced23"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ae84e7b7351408a0e02ee35defc8ced23">DrawUISpine</a> (spine::Skeleton &amp;skeleton)</td></tr>
 <tr class="memitem:a35ccfd6ffa7080aa26cb4db2c41edd8d" id="r_a35ccfd6ffa7080aa26cb4db2c41edd8d"><td class="memItemLeft">static ID3D11Device *&#160;</td><td class="memItemRight"><a class="el" href="#a35ccfd6ffa7080aa26cb4db2c41edd8d">GetDevice</a> ()</td></tr>
+<tr class="memitem:ab05c52539171006277969d58c220d981" id="r_ab05c52539171006277969d58c220d981"><td class="memItemLeft">static ID3D11DeviceContext *&#160;</td><td class="memItemRight"><a class="el" href="#ab05c52539171006277969d58c220d981">GetContext</a> ()</td></tr>
 <tr class="memitem:a0703793ce8e1bc7d49c6ed88c86abd3a" id="r_a0703793ce8e1bc7d49c6ed88c86abd3a"><td class="memItemLeft">static <a class="el" href="class_spine_d_x11_renderer.html">SpineDX11Renderer</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0703793ce8e1bc7d49c6ed88c86abd3a">GetSpineRenderer</a> ()</td></tr>
 <tr class="memitem:a2ff8abbffa9ceeeea9c0ad87bbd21ae6" id="r_a2ff8abbffa9ceeeea9c0ad87bbd21ae6"><td class="memItemLeft">static <a class="el" href="class_direct_x_texture_loader.html">DirectXTextureLoader</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a2ff8abbffa9ceeeea9c0ad87bbd21ae6">GetTextureLoader</a> ()</td></tr>
 <tr class="memitem:a8ac71f144602c2571afb6f45dae3674e" id="r_a8ac71f144602c2571afb6f45dae3674e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a8ac71f144602c2571afb6f45dae3674e">SetCamera</a> (<a class="el" href="class_camera.html">Camera</a> *newcamera)</td></tr>
@@ -212,7 +214,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1624e355845da30415643636eff003aa" name="a1624e355845da30415643636eff003aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1624e355845da30415643636eff003aa">&#9670;&#160;</a></span>DrawSprite()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1624e355845da30415643636eff003aa">&#9670;&#160;</a></span>DrawSprite() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,6 +251,65 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ID3D11ShaderResourceView *</td>          <td class="paramname"><span class="paramname"><em>TextureView</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useCamera</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9f2cfcb5e01e68f9df6bd11d48b2950" name="ac9f2cfcb5e01e68f9df6bd11d48b2950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f2cfcb5e01e68f9df6bd11d48b2950">&#9670;&#160;</a></span>DrawSprite() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Renderer::DrawSprite </td>
+          <td>(</td>
+          <td class="paramtype">const DirectX::XMFLOAT3 &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DirectX::XMFLOAT3 &amp;</td>          <td class="paramname"><span class="paramname"><em>scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DirectX::XMFLOAT3 &amp;</td>          <td class="paramname"><span class="paramname"><em>angle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DirectX::XMFLOAT4 &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11Buffer *</td>          <td class="paramname"><span class="paramname"><em>VertexBuffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11ShaderResourceView *</td>          <td class="paramname"><span class="paramname"><em>TextureView</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DirectX::XMFLOAT2 &amp;</td>          <td class="paramname"><span class="paramname"><em>uvOffset</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{&#160;0.0f,&#160;0.0f&#160;}</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -326,6 +387,31 @@ Static Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_camera.html">Camera</a> * Renderer::GetCamera </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab05c52539171006277969d58c220d981" name="ab05c52539171006277969d58c220d981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05c52539171006277969d58c220d981">&#9670;&#160;</a></span>GetContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11DeviceContext * Renderer::GetContext </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>

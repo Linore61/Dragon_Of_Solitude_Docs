@@ -23,7 +23,12 @@ var _battle_types_8h =
       [ "TURN_ACTION_EVENT", "_battle_types_8h.html#a17557ce1a5334619a8e02831bf82ba1fa2880a8139cca42883da7cf5faa4b74f2", null ],
       [ "TURN_END", "_battle_types_8h.html#a17557ce1a5334619a8e02831bf82ba1fa3d215bd2cb3f68104967d4a5706dfa66", null ],
       [ "TURN_END_EVENT", "_battle_types_8h.html#a17557ce1a5334619a8e02831bf82ba1faffc1c9ff65ade919b40c5bdd38f45723", null ],
+      [ "BATTLE_DEATH", "_battle_types_8h.html#a17557ce1a5334619a8e02831bf82ba1fa0c49426dc8480058c6eca1ee3a081a23", null ],
       [ "BATTLE_END", "_battle_types_8h.html#a17557ce1a5334619a8e02831bf82ba1fa4e1a41bc2262b5e7e668b98240d4fdae", null ],
       [ "BATTLE_END_EVENT", "_battle_types_8h.html#a17557ce1a5334619a8e02831bf82ba1fa07de610838596764e29e1c279044748d", null ]
+    ] ],
+    [ "CommandMenuLayer", "_battle_types_8h.html#ab67319d0e2d70336583f508295fe350d", [
+      [ "MAIN", "_battle_types_8h.html#ab67319d0e2d70336583f508295fe350da186495f7da296bf880df3a22a492b378", null ],
+      [ "ATTACK_LIST", "_battle_types_8h.html#ab67319d0e2d70336583f508295fe350dadaa09ec0cea86c0850d8e4378403b802", null ]
     ] ]
 ];
