@@ -7,11 +7,13 @@ var annotated_dup =
     [ "BattleEvent", "struct_battle_event.html", "struct_battle_event" ],
     [ "Camera", "class_camera.html", "class_camera" ],
     [ "Character", "class_character.html", "class_character" ],
+    [ "DamageNumber", "class_damage_number.html", "class_damage_number" ],
     [ "DebugUI", "class_debug_u_i.html", null ],
     [ "DirectXTextureLoader", "class_direct_x_texture_loader.html", "class_direct_x_texture_loader" ],
     [ "EffectBase", "class_effect_base.html", "class_effect_base" ],
     [ "Enemy", "class_enemy.html", "class_enemy" ],
     [ "Game", "class_game.html", "class_game" ],
+    [ "HPBarUI", "class_h_p_bar_u_i.html", "class_h_p_bar_u_i" ],
     [ "Lesstol", "class_lesstol.html", "class_lesstol" ],
     [ "Object", "class_object.html", "class_object" ],
     [ "ObjectBackGround", "class_object_back_ground.html", "class_object_back_ground" ],
@@ -25,5 +27,6 @@ var annotated_dup =
     [ "SpineAnimation", "class_spine_animation.html", "class_spine_animation" ],
     [ "SpineDX11Renderer", "class_spine_d_x11_renderer.html", "class_spine_d_x11_renderer" ],
     [ "stbi_io_callbacks", "structstbi__io__callbacks.html", "structstbi__io__callbacks" ],
+    [ "TimingIndicator", "class_timing_indicator.html", "class_timing_indicator" ],
     [ "UIObject", "class_u_i_object.html", "class_u_i_object" ]
 ];

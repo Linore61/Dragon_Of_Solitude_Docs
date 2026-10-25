@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['player_0',['PLAYER',['../_battle_types_8h.html#af199c6cb5f3729d914c51d6caff151cdade5dc3e0dbd007d995ed3e37bde5ce7e',1,'BattleTypes.h']]]
+  ['main_0',['MAIN',['../_battle_types_8h.html#ab67319d0e2d70336583f508295fe350da186495f7da296bf880df3a22a492b378',1,'BattleTypes.h']]]
 ];

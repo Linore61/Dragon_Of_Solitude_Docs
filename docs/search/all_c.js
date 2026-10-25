@@ -5,5 +5,6 @@ var searchData=
   ['object_2eh_2',['Object.h',['../_object_8h.html',1,'']]],
   ['object_5fbackground_2eh_3',['Object_BackGround.h',['../_object___back_ground_8h.html',1,'']]],
   ['objectbackground_4',['ObjectBackGround',['../class_object_back_ground.html',1,'ObjectBackGround'],['../class_object_back_ground.html#ad04d721bf8276acf9e598e495fc2a266',1,'ObjectBackGround::ObjectBackGround()']]],
-  ['operator_3d_5',['operator=',['../class_spine_animation.html#af53e68cb9c234f965e4a8acf144099bf',1,'SpineAnimation']]]
+  ['of_20solitude_5',['Dragon OF Solitude',['../index.html',1,'']]],
+  ['operator_3d_6',['operator=',['../class_spine_animation.html#af53e68cb9c234f965e4a8acf144099bf',1,'SpineAnimation']]]
 ];

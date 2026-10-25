@@ -128,7 +128,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a69eb7e1ee877b8e599303530b83b14" id="r_a3a69eb7e1ee877b8e599303530b83b14"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3a69eb7e1ee877b8e599303530b83b14">SpineAnimation</a> (const <a class="el" href="class_spine_animation.html">SpineAnimation</a> &amp;)=delete</td></tr>
 <tr class="memitem:af53e68cb9c234f965e4a8acf144099bf" id="r_af53e68cb9c234f965e4a8acf144099bf"><td class="memItemLeft"><a class="el" href="class_spine_animation.html">SpineAnimation</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#af53e68cb9c234f965e4a8acf144099bf">operator=</a> (const <a class="el" href="class_spine_animation.html">SpineAnimation</a> &amp;)=delete</td></tr>
 <tr class="memitem:a7ee08b650f87a70d160dcb769a6dd6df" id="r_a7ee08b650f87a70d160dcb769a6dd6df"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7ee08b650f87a70d160dcb769a6dd6df">Init</a> (<a class="el" href="class_direct_x_texture_loader.html">DirectXTextureLoader</a> &amp;textureLoader, const char *atlasPath, const char *jsonPath, const char *initialAnimation, float dataScale=1.0f)</td></tr>
-<tr class="memitem:a70e5338e50b87d9cd7a5ab80e9f1ade1" id="r_a70e5338e50b87d9cd7a5ab80e9f1ade1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a70e5338e50b87d9cd7a5ab80e9f1ade1">PlayAnimation</a> (const char *animationName, bool loop)</td></tr>
+<tr class="memitem:a6833f4d939ce8d6676735d6fa40d4b9f" id="r_a6833f4d939ce8d6676735d6fa40d4b9f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6833f4d939ce8d6676735d6fa40d4b9f">PlayAnimation</a> (const char *animationName, bool loop, bool reverse=false)</td></tr>
+<tr class="memitem:ad09577997ba7c1ce0802a8b0f00be5e3" id="r_ad09577997ba7c1ce0802a8b0f00be5e3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad09577997ba7c1ce0802a8b0f00be5e3">PlayAnimation</a> (const char *firstAnimation, const char *secondAnimation, bool lastLoop)</td></tr>
 <tr class="memitem:a80e55267dc7bdb8634652b966be761cf" id="r_a80e55267dc7bdb8634652b966be761cf"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
 <tr class="memitem:a80e55267dc7bdb8634652b966be761cf template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a80e55267dc7bdb8634652b966be761cf">PlayAnimation</a> (const char *firstAnimation, const char *secondAnimation, Args... animations)</td></tr>
 <tr class="memitem:a17fd4081570589ea41b38801704a3bd1" id="r_a17fd4081570589ea41b38801704a3bd1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a17fd4081570589ea41b38801704a3bd1">ConsumeAnimationComplete</a> (const char *animationName)</td></tr>
@@ -144,6 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5a7819fbf9ea29307ab1f97585d9951" id="r_ab5a7819fbf9ea29307ab1f97585d9951"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab5a7819fbf9ea29307ab1f97585d9951">StopAnimation</a> (float time)</td></tr>
 <tr class="memitem:a5def7cb6ae1fc64768f53723a6dcbea8" id="r_a5def7cb6ae1fc64768f53723a6dcbea8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5def7cb6ae1fc64768f53723a6dcbea8">CheckNowAnimationName</a> (const char *animationName) const</td></tr>
 <tr class="memitem:a0da8e14d6d11be83849971f6e7dc50a6" id="r_a0da8e14d6d11be83849971f6e7dc50a6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0da8e14d6d11be83849971f6e7dc50a6">FastForwardToTime</a> (float endTime, float targetTime)</td></tr>
+<tr class="memitem:abd03c1417c8b1a0904ba3ffe4b3ea436" id="r_abd03c1417c8b1a0904ba3ffe4b3ea436"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#abd03c1417c8b1a0904ba3ffe4b3ea436">FindBonePosition</a> (const char *boneName, DirectX::XMFLOAT2 &amp;outPosition)</td></tr>
 </table>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a99fd1ba779ebbe9153fec603db6bd002" name="a99fd1ba779ebbe9153fec603db6bd002"></a>
@@ -341,6 +343,27 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abd03c1417c8b1a0904ba3ffe4b3ea436" name="abd03c1417c8b1a0904ba3ffe4b3ea436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd03c1417c8b1a0904ba3ffe4b3ea436">&#9670;&#160;</a></span>FindBonePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpineAnimation::FindBonePosition </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>boneName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DirectX::XMFLOAT2 &amp;</td>          <td class="paramname"><span class="paramname"><em>outPosition</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab7995ab41773ac71f48b276b17c72515" name="ab7995ab41773ac71f48b276b17c72515"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7995ab41773ac71f48b276b17c72515">&#9670;&#160;</a></span>GetCurrentFrame()</h2>
 
@@ -478,8 +501,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a70e5338e50b87d9cd7a5ab80e9f1ade1" name="a70e5338e50b87d9cd7a5ab80e9f1ade1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70e5338e50b87d9cd7a5ab80e9f1ade1">&#9670;&#160;</a></span>PlayAnimation() <span class="overload">[1/2]</span></h2>
+<a id="a6833f4d939ce8d6676735d6fa40d4b9f" name="a6833f4d939ce8d6676735d6fa40d4b9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6833f4d939ce8d6676735d6fa40d4b9f">&#9670;&#160;</a></span>PlayAnimation() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -492,7 +515,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>loop</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>loop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>reverse</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -500,7 +528,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a80e55267dc7bdb8634652b966be761cf" name="a80e55267dc7bdb8634652b966be761cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80e55267dc7bdb8634652b966be761cf">&#9670;&#160;</a></span>PlayAnimation() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e55267dc7bdb8634652b966be761cf">&#9670;&#160;</a></span>PlayAnimation() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -531,6 +559,32 @@ template&lt;class... Args&gt; </div>
 <span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad09577997ba7c1ce0802a8b0f00be5e3" name="ad09577997ba7c1ce0802a8b0f00be5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad09577997ba7c1ce0802a8b0f00be5e3">&#9670;&#160;</a></span>PlayAnimation() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SpineAnimation::PlayAnimation </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>firstAnimation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>secondAnimation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>lastLoop</em></span>&#160;)</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
